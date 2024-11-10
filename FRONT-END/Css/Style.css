@@ -36,10 +36,55 @@ html{
 
 
 .content{
-    background-color: white;
-    width: 40%;
+    background-color: transparent;
+    width: 70%;
     height: 150px;
     display: block;
     justify-content: center;
     align-items: center;
+    
+}
+.content > h1{
+    color: whitesmoke;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.content > h1 > span{
+    color: purple;
+}
+
+.content > p{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.content > .userClick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userClick > a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 10px;
+    background-color: purple;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    margin-right: 2.5rem;
+    border: none;
+    border-radius: 5px;
+}
+.userClick > a:hover{
+    text-transform:capitalize;
+    transition: 0.8s;
+    background-color: darkorchid;
 }

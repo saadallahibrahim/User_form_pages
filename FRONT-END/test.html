@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing code tem</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        .welcome{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            min-height: 100vh;
-            background-color: whitesmoke;
-        }
-        
-        h1{
-            font-family: sans;
-            text-align: center;
-            letter-spacing: 1px;
-            color: red;
-        }
-
-    </style>
 </head>
 <body>
-    <div class="welcome">
-        <h1>WELCOME TO OUR PAGE</h1>
+
+    <div class="landing reveal">
+        <h1>Welcome to Ajo Money Company</h1>
+        <p>Scroll down to see more...</p>
     </div>
+    
+    <script>
+        // Initialize ScrollReveal and set options
+        ScrollReveal().reveal('.reveal', {
+            distance: '50px',      // Distance the element moves
+            origin: 'bottom',      // Start position of the element
+            opacity: 0,            // Initial opacity
+            duration: 800,         // Duration of the animation in milliseconds
+            easing: 'ease-in-out', // Type of easing function
+            reset: true            // Animation resets each time it scrolls into view
+        });
+    </script>
+    
 </body>
 </html>
